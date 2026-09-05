@@ -65,7 +65,7 @@ export function IconSearch() {
                 >
                   <div className="flex aspect-square items-center justify-center">
                     <Icon
-                      size={48}
+                      size={100}
                       className="transition-transform duration-200 group-hover:scale-110"
                     />
                   </div>

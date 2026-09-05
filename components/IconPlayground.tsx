@@ -31,7 +31,7 @@ const iconNames = {
 } as const;
 
 export function IconPlayground({ icon }: Props) {
-  const [size, setSize] = useState(48);
+  const [size, setSize] = useState(120);
   const [background, setBackground] = useState("#ffffff");
   const [copied, setCopied] = useState(false);
 

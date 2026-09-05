@@ -1,4 +1,5 @@
 import { NavBar } from "@/components/NavBar";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -21,12 +22,12 @@ export default function Home() {
           </p>
 
           <div className="mt-8 flex items-center gap-3">
-            <a
+            <Link
               href="/icons"
               className="rounded-lg bg-black px-5 py-2.5 text-sm font-medium text-white transition-opacity hover:opacity-80"
             >
               Browse icons
-            </a>
+            </Link>
 
             <a
               href="/contribute"
