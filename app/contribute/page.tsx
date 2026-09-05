@@ -68,6 +68,25 @@ export default function ContributePage() {
               Browse icons
             </Link>
           </section>
+
+          <section className="border-t border-neutral-200 pt-12">
+            <h2 className="text-xl font-semibold">Credits</h2>
+
+            <p className="mt-3 leading-7 text-neutral-600">
+              Some payment icons in MyIcons are based on the work from the
+              Payment-Icon project by SnorSnor9998. We appreciate the original
+              work and contribution to the open-source community.
+            </p>
+
+            <a
+              href="https://github.com/SnorSnor9998/Payment-Icon"
+              target="_blank"
+              rel="noreferrer"
+              className="mt-6 inline-flex rounded-lg border border-neutral-200 px-4 py-2.5 text-sm font-medium transition-colors hover:bg-neutral-50"
+            >
+              View Payment-Icon ↗
+            </a>
+          </section>
         </div>
       </main>
     </>

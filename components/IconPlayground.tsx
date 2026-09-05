@@ -6,6 +6,8 @@ import {
   DuitNowSquareV2,
   DuitNowSquareV3,
   DuitNowSquareV4,
+  TngSquare,
+  TngCirle,
 } from "@raufsemi/myicons";
 
 type Props = {
@@ -21,6 +23,8 @@ const iconMap = {
   "duitnow-square-v2": DuitNowSquareV2,
   "duitnow-square-v3": DuitNowSquareV3,
   "duitnow-square-v4": DuitNowSquareV4,
+  "tng-square": TngSquare,
+  "tng-circle": TngCirle,
 } as const;
 
 const iconNames = {
@@ -28,6 +32,8 @@ const iconNames = {
   "duitnow-square-v2": "DuitNowSquareV2",
   "duitnow-square-v3": "DuitNowSquareV3",
   "duitnow-square-v4": "DuitNowSquareV4",
+  "tng-square": "TngSquare",
+  "tng-circle": "TngCirle",
 } as const;
 
 export function IconPlayground({ icon }: Props) {

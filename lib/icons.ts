@@ -3,6 +3,8 @@ import {
   DuitNowSquareV2,
   DuitNowSquareV3,
   DuitNowSquareV4,
+  TngCirle,
+  TngSquare,
 } from "@raufsemi/myicons";
 
 export const icons = [
@@ -29,5 +31,18 @@ export const icons = [
     slug: "duitnow-square-v4",
     category: "Payment",
     component: DuitNowSquareV4,
+  },
+
+  {
+    name: "Touch N Go Square",
+    slug: "tng-square",
+    category: "Wallet",
+    component: TngSquare,
+  },
+  {
+    name: "Touch N Go Circle",
+    slug: "tng-circle",
+    category: "Wallet",
+    component: TngCirle,
   },
 ] as const;
