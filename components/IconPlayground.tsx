@@ -1,14 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import {
-  DuitNowSquareV1,
-  DuitNowSquareV2,
-  DuitNowSquareV3,
-  DuitNowSquareV4,
-  TngSquare,
-  TngCirle,
-} from "@raufsemi/myicons";
+
+import { icons } from "@/lib/icons";
 
 type Props = {
   icon: string;
@@ -18,37 +12,25 @@ const sizes = [16, 20, 24, 32, 48, 64, 96, 120];
 
 const backgrounds = ["#ffffff", "#f5f5f5", "#000000", "#fef3c7"];
 
-const iconMap = {
-  "duitnow-square-v1": DuitNowSquareV1,
-  "duitnow-square-v2": DuitNowSquareV2,
-  "duitnow-square-v3": DuitNowSquareV3,
-  "duitnow-square-v4": DuitNowSquareV4,
-  "tng-square": TngSquare,
-  "tng-circle": TngCirle,
-} as const;
-
-const iconNames = {
-  "duitnow-square-v1": "DuitNowSquareV1",
-  "duitnow-square-v2": "DuitNowSquareV2",
-  "duitnow-square-v3": "DuitNowSquareV3",
-  "duitnow-square-v4": "DuitNowSquareV4",
-  "tng-square": "TngSquare",
-  "tng-circle": "TngCirle",
-} as const;
-
 export function IconPlayground({ icon }: Props) {
   const [size, setSize] = useState(120);
   const [background, setBackground] = useState("#ffffff");
   const [copied, setCopied] = useState(false);
 
-  const Icon = iconMap[icon as keyof typeof iconMap];
-  const iconName = iconNames[icon as keyof typeof iconNames];
+  const selectedIcon = icons.find((item) => item.slug === icon);
+
+  const Icon = selectedIcon?.component;
+  const iconName = selectedIcon?.componentName;
 
   if (!Icon) {
     return null;
   }
 
   async function handleCopy() {
+    if (!iconName) {
+      return;
+    }
+
     await navigator.clipboard.writeText(`<${iconName} size={${size}} />`);
 
     setCopied(true);

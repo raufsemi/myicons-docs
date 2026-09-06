@@ -1,5 +1,6 @@
 import { NavBar } from "@/components/NavBar";
 import { IconSearch } from "@/components/IconSearch";
+import { Footer } from "@/components/Footer";
 
 export default function IconsPage() {
   return (
@@ -16,6 +17,8 @@ export default function IconsPage() {
         </div>
 
         <IconSearch />
+
+        <Footer />
       </main>
     </>
   );

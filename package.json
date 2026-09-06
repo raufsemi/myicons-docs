@@ -3,13 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "generate:icons": "tsx scripts/generate-icons.ts",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "eslint"
   },
   "dependencies": {
-    "@raufsemi/myicons": "^1.0.8",
+    "@raufsemi/myicons": "^1.0.9",
     "geist": "^1.7.2",
     "next": "16.3.4",
     "react": "19.2.8",
@@ -23,6 +24,7 @@
     "eslint": "^9",
     "eslint-config-next": "16.3.4",
     "tailwindcss": "^4",
+    "tsx": "^4.23.13",
     "typescript": "^5"
   }
 }
