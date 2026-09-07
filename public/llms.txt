@@ -12,9 +12,7 @@ The library provides reusable React icons designed for developers building web a
 
 ## Icon Pages
 
-Individual icon documentation is available under:
-
-https://myicons.vercel.app/icons/
+Individual icon documentation is available through the [Icons](https://myicons.vercel.app/icons/) page.
 
 Each icon page provides the icon name, category, preview, and React usage information.
 
