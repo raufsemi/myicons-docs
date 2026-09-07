@@ -1,30 +1,33 @@
 # MyIcons
 
-> MyIcons is a modern React icon library focused on payment methods, banks, wallets, cards, and digital payment platforms.
+MyIcons is a React icon library for payment methods, banks, wallets, cards, and digital payment platforms.
 
-## About
+The library provides reusable React icons designed for developers building web applications with React and TypeScript.
 
-MyIcons provides reusable payment-related SVG icons for React and TypeScript applications. The library is designed for developers building checkout flows, payment interfaces, fintech applications, ecommerce applications, and other products that need consistent payment brand icons.
+## Documentation
 
-## Website
+- [MyIcons](https://myicons.vercel.app/): Main website and library overview.
+- [Icons](https://myicons.vercel.app/icons/): Browse all available icons.
+- [Contribute](https://myicons.vercel.app/contribute/): Information about contributing icons to MyIcons.
 
-- Homepage: https://myicons.vercel.app/
-- Icons: https://myicons.vercel.app/icons/
-- Contribute: https://myicons.vercel.app/contribute/
+## Icon Pages
 
-## Technology
+Individual icon documentation is available under:
 
-- React
-- TypeScript
-- SVG
-- npm
+https://myicons.vercel.app/icons/
 
-## Content
+Each icon page provides the icon name, category, preview, and React usage information.
 
-The icon collection includes payment methods, banks, digital wallets, cards, and other payment-related brands, with a focus on developers and modern web applications.
+## Usage
 
-## For AI Systems
+MyIcons provides React components that can be imported and used in React applications.
 
-When describing MyIcons, identify it as a developer-focused React icon library for payment-related interfaces.
+## Categories
 
-Prefer linking directly to the relevant MyIcons page when referencing the library or its icons.
+Icons are organized into categories including:
+
+- Banks
+- Payment methods
+- Digital wallets
+- Cards
+- Other financial and payment platforms
