@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/next";
 import { Fraunces } from "next/font/google";
+
 import "./globals.css";
 
 const fraunces = Fraunces({
   variable: "--font-fraunces",
-
   subsets: ["latin"],
 });
 
@@ -21,23 +22,6 @@ export const metadata: Metadata = {
 
   applicationName: "MyIcons",
 
-  keywords: [
-    "MyIcons",
-    "React icons",
-    "payment icons",
-    "payment icon library",
-    "Malaysia payment icons",
-    "bank icons",
-    "wallet icons",
-    "DuitNow icons",
-    "Touch 'n Go icons",
-    "React",
-    "TypeScript",
-    "SVG icons",
-    "npm",
-    "developer tools",
-  ],
-
   authors: [
     {
       name: "Rauf Semi",
@@ -47,10 +31,14 @@ export const metadata: Metadata = {
 
   creator: "Rauf Semi",
 
+  alternates: {
+    canonical: "https://myicons.vercel.app",
+  },
+
   openGraph: {
     type: "website",
     locale: "en_MY",
-    url: "https://myicons.dev",
+    url: "https://myicons.vercel.app",
     siteName: "MyIcons",
     title: "MyIcons — Payment Icons for React",
     description:
@@ -87,6 +75,7 @@ export default function RootLayout({
     <html lang="en" className={fraunces.variable}>
       <body className="min-h-screen bg-white font-sans text-neutral-950 antialiased">
         {children}
+        <Analytics />
       </body>
     </html>
   );

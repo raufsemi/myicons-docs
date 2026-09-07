@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
@@ -10,6 +11,36 @@ type Props = {
     slug: string;
   }>;
 };
+
+export function generateStaticParams() {
+  return icons.map((icon) => ({
+    slug: icon.slug,
+  }));
+}
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { slug } = await params;
+
+  const icon = icons.find((icon) => icon.slug === slug);
+
+  if (!icon) {
+    return {};
+  }
+
+  return {
+    title: `${icon.name} Icon`,
+    description: `${icon.name} icon for React. A ${icon.category.toLowerCase()} icon from the MyIcons library.`,
+    alternates: {
+      canonical: `https://myicons.vercel.app/icons/${icon.slug}`,
+    },
+    openGraph: {
+      title: `${icon.name} Icon — MyIcons`,
+      description: `${icon.name} icon for React.`,
+      url: `https://myicons.vercel.app/icons/${icon.slug}`,
+      type: "website",
+    },
+  };
+}
 
 export default async function IconPage({ params }: Props) {
   const { slug } = await params;
